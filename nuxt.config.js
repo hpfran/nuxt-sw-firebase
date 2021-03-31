@@ -68,13 +68,12 @@ module.exports = {
   },
   firebase: {
     config: {
-      apiKey: '',
-      authDomain: '',
-      databaseURL: '',
-      projectId: '',
-      storageBucket: '',
-      messagingSenderId: '',
-      appId: '',
+      apiKey: 'AIzaSyBjQMvyeOGm-nVWov6LrShyjyFDgavVFYE',
+      authDomain: 'mystream-a6e3f.firebaseapp.com',
+      projectId: 'mystream-a6e3f',
+      storageBucket: 'mystream-a6e3f.appspot.com',
+      messagingSenderId: '527155936045',
+      appId: '1:527155936045:web:d1c615895a6cf45a5af1a4',
     },
     services: {
       firestore: true,
