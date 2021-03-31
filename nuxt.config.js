@@ -74,6 +74,7 @@ module.exports = {
       storageBucket: 'mystream-a6e3f.appspot.com',
       messagingSenderId: '527155936045',
       appId: '1:527155936045:web:d1c615895a6cf45a5af1a4',
+      databaseURL: 'https://mystream-a6e3f.firebaseio.com',
     },
     services: {
       firestore: true,
