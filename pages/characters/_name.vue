@@ -63,13 +63,15 @@ export default {
         await charactersCollection.doc(accessUrl).update({
           favourite: this.$fireStoreObj.FieldValue.arrayUnion(
             this.authUser.uid
-          )
+          ),
+          favouriteCount: this.$fireStoreObj.FieldValue ? this.$fireStoreObj.FieldValue.increment(1) : 1
         });
       } else {
         await charactersCollection.doc(accessUrl).update({
           favourite: this.$fireStoreObj.FieldValue.arrayRemove(
             this.authUser.uid
-          )
+          ),
+          favouriteCount: this.$fireStoreObj.FieldValue ? this.$fireStoreObj.FieldValue.increment(-1) : 0
         });
       }
     }
